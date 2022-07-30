@@ -21,6 +21,52 @@ main{
     -o-border-radius: 5px;
     margin-bottom: 21px;
 }
+/* header style  */
+.header-bg{
+    height: 94px;
+    background: #562EFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+}
+.header-container{
+    width: 870px;
+}
+.header-wrap{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.logo img{
+    width: 41px;
+    height: 51px;
+    margin-right: 16px;
+}
+.logo h2{
+    color: white;
+    font-size: 24px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu .profile-pic img{
+    width: 51px;
+    height: 51px;
+}
+.menu nav a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 40px;
+    color: white;
+}
 /* top player style */
 .top-players{
     padding: 30px;
@@ -150,6 +196,12 @@ hr{
 /* media queries style  */
 /* mobile devices  */
 @media (max-width:688px) {
+    .header-container{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
     .container{
         width: 100%;
     }
@@ -162,6 +214,9 @@ hr{
 }
 /* tablet devices  */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+    .header-container{
+        width: 100%;
+    }
     .container{
         width: 100%;
     }
